@@ -1,0 +1,141 @@
+.collectionsPage {
+  background-color: var(--background);
+  padding-bottom: 6rem;
+}
+
+.headerSection {
+  text-align: center;
+  padding: 4.5rem 0 3.5rem 0;
+}
+
+.pageTitle {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.collectionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.collectionRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 860px) {
+  .collectionRow {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4.5rem;
+  }
+
+  .rowReverse {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .rowReverse .textColumn {
+    order: 2;
+  }
+
+  .rowReverse .imageColumn {
+    order: 1;
+  }
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.collectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--foreground);
+  margin-bottom: 0.35rem;
+}
+
+.materialSub {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+.collectionDesc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.imageColumn {
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #f2f0ec;
+  overflow: hidden;
+  border-radius: var(--radius-xs);
+}
+
+.collectionImage {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.imageWrapper:hover .collectionImage {
+  transform: scale(1.03);
+}
+
+.badgeGold {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #9e6a2a;
+  color: #ffffff;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 1px;
+  z-index: 10;
+}
+
+.curatedPill {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  background: rgba(23, 24, 28, 0.75);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,467 @@
+.shopContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+@media (min-width: 1024px) {
+  .shopContainer {
+    flex-direction: row;
+  }
+}
+
+.mobileFilterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 1024px) {
+  .mobileFilterBar {
+    display: none;
+  }
+}
+
+.mobileFilterToggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border, #e2e8f0);
+  padding: 8px 16px;
+  border-radius: var(--radius-md, 8px);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--foreground, #0f172a);
+  cursor: pointer;
+}
+
+.activeDot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary, #c2410c);
+  border-radius: 50%;
+}
+
+.mobileCountText {
+  font-size: 0.875rem;
+  color: var(--muted, #64748b);
+}
+
+.sidebar {
+  width: 100%;
+  flex-shrink: 0;
+  background: var(--card-bg, #ffffff);
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 260px;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .closeDrawerBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: var(--spacing-xl);
+    overflow-y: auto;
+  }
+
+  .mobileDrawerActive {
+    display: block !important;
+  }
+
+  .sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+  }
+
+  .closeDrawerBtn {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--foreground);
+  }
+}
+
+.clearAllLink {
+  background: none;
+  border: none;
+  color: var(--primary, #c2410c);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clearAllLink:hover {
+  text-decoration: underline;
+}
+
+.mainContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.shopHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .shopHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.headerTitleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.productCount {
+  font-size: 0.875rem;
+  color: var(--muted, #64748b);
+}
+
+.sortSelect {
+  padding: 8px 16px;
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: var(--radius-md, 8px);
+  background-color: var(--card-bg, #ffffff);
+  color: var(--foreground, #0f172a);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.sortSelect:focus {
+  border-color: var(--primary, #c2410c);
+}
+
+.mobileSortGroup {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .mobileSortGroup {
+    display: none;
+  }
+}
+
+.filterGroup {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border, #e2e8f0);
+}
+
+.filterTitle {
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+  color: var(--foreground, #0f172a);
+}
+
+.filterList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filterListBtn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--muted, #64748b);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filterListBtn:hover {
+  background-color: #f8fafc;
+  color: var(--foreground, #0f172a);
+}
+
+.filterListBtnActive {
+  background-color: #fff7ed;
+  color: var(--primary, #c2410c);
+  font-weight: 600;
+}
+
+.activePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: #fff7ed;
+  border: 1px solid #ffedd5;
+  border-radius: 16px;
+  font-size: 0.8125rem;
+  color: var(--primary, #c2410c);
+
+}
+
+.activePill button {
+  background: none;
+  border: none;
+  color: var(--primary, #c2410c);
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Price form */
+.priceForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.priceInputsRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priceInput {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 6px;
+  outline: none;
+}
+
+.priceInput:focus {
+  border-color: var(--primary, #c2410c);
+}
+
+.priceSeparator {
+  color: var(--muted, #64748b);
+}
+
+.applyPriceBtn {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--surface-light, #f1f5f9);
+  border: 1px solid var(--border, #cbd5e1);
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--foreground, #0f172a);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.applyPriceBtn:hover {
+  background-color: var(--primary, #c2410c);
+  border-color: var(--primary, #c2410c);
+  color: white;
+}
+
+/* Active filter pills section */
+.activePillsRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.activePillTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  font-size: 0.8125rem;
+  color: #334155;
+}
+
+.activePillTag button {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 0.875rem;
+
+}
+
+.activePillTag button:hover {
+  color: #0f172a;
+}
+
+/* Empty / No results state */
+.emptyState {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background-color: #f8fafc;
+  border: 1px dashed var(--border, #cbd5e1);
+  border-radius: var(--radius-lg, 12px);
+  margin-top: 1rem;
+}
+
+.emptyStateIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.emptyStateTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground, #0f172a);
+  margin-bottom: 0.5rem;
+}
+
+.emptyStateText {
+  color: var(--muted, #64748b);
+  font-size: 0.875rem;
+  max-width: 420px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.emptyStateActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: var(--primary, #c2410c);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.emptyCategoryTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted, #64748b);
+  margin-bottom: 0.75rem;
+}
+
+.emptyCategoryChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chip {
+  padding: 6px 14px;
+  background: white;
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 16px;
+  font-size: 0.8125rem;
+  color: var(--foreground, #0f172a);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.chip:hover {
+  border-color: var(--primary, #c2410c);
+  color: var(--primary, #c2410c);
+}
+
+/* Pagination */
+.paginationRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border, #e2e8f0);
+}
+
+.pageBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e2e8f0);
+  background: white;
+  color: var(--foreground, #0f172a);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.pageBtn:hover {
+  border-color: var(--primary, #c2410c);
+  color: var(--primary, #c2410c);
+}
+
+.pageBtnActive {
+  background-color: var(--primary, #c2410c);
+  border-color: var(--primary, #c2410c);
+  color: white;
+  font-weight: 700;
+}
+
+.pageBtnDisabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

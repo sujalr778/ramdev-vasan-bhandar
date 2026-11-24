@@ -1,0 +1,141 @@
+{
+  "products": [
+    {
+      "name": "Premium Triply Stainless Steel Kadai with Lid",
+      "category": "Kadai",
+      "price": 2499,
+      "originalPrice": 3299,
+      "rating": 4.9,
+      "reviews": 148,
+      "image": "/kadhai.jpg",
+      "badge": "Best Seller",
+      "description": "Experience professional-grade cooking with our premium triply stainless steel kadai. The 3-layer bonded structure with pure aluminum core ensures even heat distribution, while the surgical-grade SS 304 interior provides a 100% non-toxic cooking surface. Perfect for deep frying, sautéing, curries, and Indian sweets.",
+      "material": "Triply Stainless Steel (SS 304 + Aluminum + SS 430)",
+      "capacity": "3.5L",
+      "stock": 50,
+      "_id": "apyel0p"
+    },
+    {
+      "name": "Hard Anodized Deep Fry Pan (2.5L)",
+      "category": "Fry Pan",
+      "price": 1899,
+      "originalPrice": 2499,
+      "rating": 4.7,
+      "reviews": 96,
+      "image": "/frypan.jpg",
+      "badge": "Chef Choice",
+      "description": "Our hard anodized deep fry pan is twice as hard as stainless steel, ensuring incredible scratch resistance and longevity. Heavy base with stay-cool riveted stainless steel handle prevents hot spots, ideal for stir-fries, shallow frying, and omelets.",
+      "material": "Hard Anodized Heavy Gauge Aluminum",
+      "capacity": "2.5L",
+      "stock": 35,
+      "_id": "pp1t54a"
+    },
+    {
+      "name": "Cast Iron Dosa Tawa (10 inch)",
+      "category": "Tawa",
+      "price": 1499,
+      "originalPrice": 1999,
+      "rating": 4.9,
+      "reviews": 230,
+      "image": "/tawa.jpg",
+      "badge": "Pre-Seasoned",
+      "description": "Get hotel-crisp dosas and fluffy rotis every time with our 100% natural, pre-seasoned cast iron tawa. Retains high heat for uniform browning while enriching food with natural dietary iron. Safe for induction, gas, and fire.",
+      "material": "Pure Pre-Seasoned Cast Iron",
+      "capacity": "10 inch diameter (26 cm)",
+      "stock": 120,
+      "_id": "sigmuh1"
+    },
+    {
+      "name": "Non-Stick Appam Patra with Lid",
+      "category": "Specialty",
+      "price": 899,
+      "originalPrice": 1299,
+      "rating": 4.6,
+      "reviews": 64,
+      "image": "/appam_patra.jpg",
+      "description": "Prepare crispy, golden appams and kuzhi paniyaram with minimal oil using our heavy-gauge non-stick appam maker. Comes with a heat-resistant tempered glass lid and cool-touch ergonomic side handles.",
+      "material": "Heavy Gauge Aluminum with German Non-Stick Coating",
+      "capacity": "12 Cavities",
+      "stock": 45,
+      "_id": "ke0ai6u"
+    },
+    {
+      "name": "Stainless Steel Pressure Cooker (5L)",
+      "category": "Pressure Cooker",
+      "price": 3499,
+      "originalPrice": 4299,
+      "rating": 4.8,
+      "reviews": 328,
+      "image": "/cooker.jpg",
+      "badge": "Trending",
+      "description": "Cook lentils, rice, and meats up to 70% faster with our high-efficiency stainless steel pressure cooker. Features an impact-bonded sandwich base for induction compatibility, lead-free safety valve, and gasket release system.",
+      "material": "Surgical Grade 18/8 Stainless Steel",
+      "capacity": "5L Induction Base",
+      "stock": 80,
+      "_id": "wizclst"
+    },
+    {
+      "name": "Premium Copper Bottom Handi Set",
+      "category": "Handi",
+      "price": 2199,
+      "originalPrice": 2899,
+      "rating": 4.5,
+      "reviews": 84,
+      "image": "/copper_handi.jpg",
+      "description": "Serve and cook signature biryanis, gravies, and stews in authentic royal style. Pure copper base conducts heat instantly and evenly, while the mirror-polished stainless steel interior keeps food fresh and warm.",
+      "material": "Mirror Stainless Steel with Heavy Copper Bottom",
+      "capacity": "Set of 3 (1L, 1.5L, 2L)",
+      "stock": 25,
+      "_id": "s9vd77p"
+    },
+    {
+      "name": "Artisan Triply Saucepot Casserole with Lid (3L)",
+      "category": "Casserole",
+      "price": 2299,
+      "originalPrice": 2999,
+      "rating": 4.8,
+      "reviews": 112,
+      "image": "/saucepot.jpg",
+      "badge": "New Arrival",
+      "description": "A versatile heavy-bottom casserole saucepot designed for soups, curries, boiling milk, and slow simmer dishes. Triply bonded technology with cast steel handles and snug-fit aroma-lock lid.",
+      "material": "Triply Bonded Stainless Steel",
+      "capacity": "3.0L",
+      "stock": 40,
+      "_id": "art_casserole_3l"
+    },
+    {
+      "name": "Grand Master 5-Piece Triply Cookware Set",
+      "category": "Cookware Set",
+      "price": 7499,
+      "originalPrice": 9999,
+      "rating": 5,
+      "reviews": 182,
+      "image": "/hero_set.jpg",
+      "badge": "Luxury Gift Set",
+      "description": "The ultimate cookware suite for modern Indian homes. Includes 3.5L Kadai with Lid, 2.5L Fry Pan, 3L Casserole, 10-inch Tawa, and Stainless Steel Spatula. Complete in premium gift packaging.",
+      "material": "Full 3-Ply Bonded Surgical Grade Steel",
+      "capacity": "5 Pieces Complete Kitchen Suite",
+      "stock": 20,
+      "_id": "grand_master_set_5p"
+    }
+  ],
+  "users": [
+    {
+      "_id": "admin_user_01",
+      "name": "Ramdev Admin",
+      "email": "admin@ramdevvasanbhandar.com",
+      "password": "$2b$10$Fy9DhRpFQSCz6QxvHOlb8.aoGQqDaYLYmuogPRY/pvg5Re8rTms/u",
+      "role": "admin",
+      "createdAt": "2026-09-09T11:17:05.845Z"
+    },
+    {
+      "_id": "user_1793338345352",
+      "name": "Sujal Mehta",
+      "email": "sujalrmehta2003@gmail.com",
+      "password": "$2b$10$oeOrxhMs700wvE9GyYyOTO0g6epnscKRgPaF24sYqLqzWdTTLNQuy",
+      "role": "customer",
+      "createdAt": "2026-10-30T05:32:25.352Z"
+    }
+  ],
+  "orders": []
+}
